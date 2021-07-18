@@ -36,6 +36,10 @@ module.exports = {
         "3/7": "93%",
         "4/7": "95%",
       },
+      scale: {
+        "115": "1.15",
+        "120": "1.20",
+      },
     },
     fontFamily: {
       poppins: ["Poppins"],

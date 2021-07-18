@@ -276,12 +276,9 @@
           <span class="simple-router-link">Fees</span>
         </label>
       </div>
-      <button
-        type="submit"
-        class="block w-full px-4 py-3 mt-6 font-semibold text-white transition duration-500 ease-in-out transform rounded-lg bg-primary hover:bg-primary-dark focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 hover:to-black"
-      >
-        Submit
-      </button>
+      <div class="h-10 mt-6">
+        <Button primary buttonName="Submit" buttonType="submit"> </Button>
+      </div>
     </form>
     <p class="mt-8 text-center">
       Already have an account?
@@ -297,9 +294,10 @@ import { CheckCircleIcon } from "@heroicons/vue/solid";
 import { reactive, ref } from "vue";
 import useValidate from "@vuelidate/core";
 import { required, email, helpers, minLength } from "@vuelidate/validators";
+import Button from "@/components/Button";
 
 export default {
-  components: { CheckCircleIcon },
+  components: { CheckCircleIcon, Button },
   setup() {
     const state = reactive({
       firstName: "",

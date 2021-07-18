@@ -30,7 +30,7 @@
         </router-link>
 
         <router-link
-          to="/something"
+          to="/masterlist"
           @click="$store.commit('closeMenu')"
           tag="li"
           class="router-link dark:from-gray-700 dark:to-gray-800"
@@ -165,6 +165,3 @@ export default {
   @apply text-primary font-semibold transition-colors duration-500 border-l-4 border-primary bg-gradient-to-r from-blue-100 to-white;
 }
 </style>
-
-// ViewGridIcon, // ClipboardListIcon, // ArchiveIcon, // UserGroupIcon, //
-CollectionIcon, // BookOpenIcon, // UserCircleIcon,

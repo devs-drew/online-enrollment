@@ -86,12 +86,9 @@
       <div class="mt-2 text-right">
         <a href="#" class="simple-router-link text-sm">Forgot Password?</a>
       </div>
-      <button
-        type="submit"
-        class="block w-full px-4 py-3 mt-6 font-semibold text-white transition duration-500 ease-in-out transform rounded-lg bg-primary hover:bg-primary-dark focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 hover:to-black"
-      >
-        Log In
-      </button>
+      <div class="h-10 mt-6">
+        <Button primary buttonName="Log in" buttonType="submit"> </Button>
+      </div>
     </form>
     <p class="mt-8 text-center">
       Don't have an account yet?
@@ -105,9 +102,10 @@
 <script>
 import { EyeIcon, EyeOffIcon } from "@heroicons/vue/solid";
 import { ref } from "vue";
+import Button from "@/components/Button";
 
 export default {
-  components: { EyeIcon, EyeOffIcon },
+  components: { Button, EyeIcon, EyeOffIcon },
   setup() {
     const showPassword = ref(false);
 

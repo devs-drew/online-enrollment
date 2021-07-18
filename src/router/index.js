@@ -4,7 +4,7 @@ import Login from "@/views/auth/Login";
 import Register from "@/views/auth/Register";
 import Home from "@/views/Home";
 import Dashboard from "@/views/Dashboard";
-import Something from "@/views/Something";
+import MasterList from "@/views/MasterList";
 
 const routes = [
   {
@@ -19,9 +19,9 @@ const routes = [
         component: Dashboard,
       },
       {
-        path: "/something",
-        name: "somethingnew",
-        component: Something,
+        path: "/masterlist",
+        name: "masterlist",
+        component: MasterList,
       },
     ],
   },
